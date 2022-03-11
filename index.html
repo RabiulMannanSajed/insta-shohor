@@ -58,17 +58,27 @@
         </div>
     </main>
     <section class="container">
-        <h1>1. Session storage vs Local storage</h1>
+        <!-- question 1 -->
+        <h2>1. Session storage vs Local storage</h2>
         <p>
             <b> Session storage:</b>when we store data in session storage that mean the data only passes only for the
             particular session when the user closes the window that data is lost session stories data not being sent to
             the server.it stores a minimum of 5 MB of data.
-            <br><br>
+            <br>
             <b>Local storage:</b>local storage is as same as session storage the advantage is here is that doesn't clear
             itself and the user closes is using the tab this data is stored in his memory when again the user comes to
             the same website that data is still stored in this website local storage. it has the highest memory capacity
             this depends on your device and Browser. these store API follows the same-origin policy
         </p>
+        <br>
+        <!-- question 2 -->
+        <h2>2.what is Eventloop do in js?</h2>
+        <p>eventloop সেটা যা js এর code run করে স্টেপ বাই স্টেপ .Eventloop it's a loop which is look for the event. মনে
+            করি পাঁচটি console.log আছে যা stap-by-stap show হবে 2nd console.log setTimeOut function যা 3sec পর
+            দেখাবে যেহেতু Eventloop code step-by-step run করতে সাহায্য করে তা কোডগুলো read করতে শুরু করবে প্রথম
+            console.log run করার পর দ্বিতীয় code এ যাবে যেহেতু এটি 3sec দেখাবে তাই তার জন্য অপেক্ষা না করে
+            3(console.log),4(console.log),5(console.log) নাম্বার console.log show করার পর setTimeOut functionটি show
+            করবে যা eventloop এর কাজ।</p>
     </section>
     <footer></footer>
 
