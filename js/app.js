@@ -54,6 +54,9 @@ const createPost = (post) => {
   const image = post.image;
   // fixed the user image in web site
   const userImage = post.userImage;
+  // comment and user name
+  const commenterName = post.comments[0]?.user;
+  const CommentOfCommenter = post.comments[0]?.text;
   const div = document.createElement("article");
   div.classList.add("post");
   div.innerHTML = `
@@ -121,9 +124,9 @@ const createPost = (post) => {
                   <div class="post__description">
                     <small>
                       <a class="post__name--underline" href="#">
-                          ${post.comments?.user}
+                          ${commenterName}
                       </a>
-                      ${post.comments?.text}
+                      ${CommentOfCommenter}
                     </small>
                   </div>
                   <span class="post__date-time">30 minutes ago</span>
